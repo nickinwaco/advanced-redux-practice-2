@@ -14,10 +14,10 @@ import TransactionsPanel from "./components/TransactionsPanel";
 
 function App(props) {
   return (
-    <div> 
+    <div>
       <div id="wrapper">
         <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <TopNav messages={props.messages} />
+          <TopNav  />
           <SideNav />
         </nav>
         <div id="page-wrapper">
@@ -35,10 +35,10 @@ function App(props) {
               </div>
             </div>
             <div className="row">
-              <Comments newComments={props.newComments} />
+              <Comments  />
               <Tasks newTasks={props.newTasks} />
-              <Orders newOrders={props.newOrders} />
-              <Tickets tickets={props.tickets} />
+              <Orders  />
+              <Tickets  />
             </div>
             <AreaChart />
             <div className="row">
@@ -47,7 +47,7 @@ function App(props) {
                 <TasksPanel tasks={props.tasks} />
               </div>
               <div className="col-lg-4">
-                <TransactionsPanel orders={props.orders} />
+                <TransactionsPanel  />
               </div>
             </div>
           </div>
@@ -58,16 +58,16 @@ function App(props) {
   );
 }
 
-App.propTypes = {
-  dateTime: PropTypes.string.isRequired,
-  newComments: PropTypes.number.isRequired,
-  newTasks: PropTypes.number.isRequired,
-  newOrders: PropTypes.number.isRequired,
-  tickets: PropTypes.number.isRequired,
-  orders: PropTypes.array.isRequired,
-  taskItem: PropTypes.string.isRequired,
-  messages: PropTypes.array,
-  tasks: PropTypes.array
-};
+// App.propTypes = {
+//   dateTime: PropTypes.string.isRequired,
+//   newComments: PropTypes.number.isRequired,
+//   newTasks: PropTypes.number.isRequired,
+//   newOrders: PropTypes.number.isRequired,
+//   tickets: PropTypes.number.isRequired,
+//   orders: PropTypes.array.isRequired,
+//   taskItem: PropTypes.string.isRequired,
+//   messages: PropTypes.array,
+//   tasks: PropTypes.array
+// };
 
 export default App;
