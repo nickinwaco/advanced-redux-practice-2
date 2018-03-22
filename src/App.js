@@ -1,6 +1,6 @@
 import React from "react";
 import TopNav from "./components/TopNav";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import AreaChart from "./components/AreaChart";
 import Comments from "./components/Comments";
 import DonutChart from "./components/DonutChart";
@@ -17,7 +17,7 @@ function App(props) {
     <div>
       <div id="wrapper">
         <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <TopNav  />
+          <TopNav />
           <SideNav />
         </nav>
         <div id="page-wrapper">
